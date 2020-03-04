@@ -6,10 +6,10 @@
       <class name="com.Amazon.SecondTestClass">
         <methods>
           <include name="initialioseBrowser"/>
+          <include name="SecondTest"/>
           <include name="getResult"/>
           <include name="closeBrowser"/>
           <include name="beforeclass"/>
-          <include name="SecondTestSecond"/>
         </methods>
       </class> <!-- com.Amazon.SecondTestClass -->
     </classes>

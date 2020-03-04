@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
 public class TestFrame extends BrowserFunction{
@@ -57,9 +58,44 @@ public class TestFrame extends BrowserFunction{
 		}
 
 	  
-  }
+  }// End of Test
   
+@Test
+public void firstTestSecond() throws InterruptedException {
+	String url = "https://www.makemytrip.com/";
+	driver.get(url);
+	driver.manage().window().maximize();
+	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	
+	Thread.sleep(3000);
+	driver.findElement(By.xpath("//*[@id='root']//input[@id='fromCity']")).click();
+	WebElement source = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='From']"));
+	//source.click();
+	//source.clear();
+	source.sendKeys("mum");
+	Thread.sleep(3000);
+	source.sendKeys(Keys.ARROW_DOWN);
+	source.sendKeys(Keys.ENTER);
+	//*[@id='root']//input[@id='fromCity']
+	
+	
+	
+	
+}//End of firstTestSecond
 
+@Test
+public void firstTestThird() throws InterruptedException {
+	driver.findElement(By.xpath("//*[@id='root']//input[@id='toCity']//parent ::label/span")).click();
+	WebElement destination = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='To']"));
+	//destination.click();
+	//destination.clear();
+	destination.sendKeys("del");
+	Thread.sleep(3000);
+	destination.sendKeys(Keys.ARROW_DOWN);
+	destination.sendKeys(Keys.ENTER);
+}// End of firstTestThird
+
+	
   
   
   

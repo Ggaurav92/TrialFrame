@@ -59,7 +59,7 @@ public class BrowserFunction {
 	{
 		System.out.println("In After method");
 		System.out.println(result.getMethod().getConstructorOrMethod().getMethod().getName());
-		System.out.println(this.getClass().getSimpleName());
+		//System.out.println(this.getClass().getSimpleName());
 		//test= extent.createTest(result.getMethod().getConstructorOrMethod().getMethod().getName());
 	    if(result.getStatus() == ITestResult.FAILURE)
 	    {

@@ -31,6 +31,12 @@ public class SecondTestClass extends BrowserFunction{
   
   @Test
   public void SecondTestSecond() throws InterruptedException {
+	  System.out.println("In Second Test Second");
+  }
+	
+  
+  @Test
+  public void SecondTest() throws InterruptedException {
 	  //test= extent.createTest("l");
 	  String url = "https://rahulshettyacademy.com/AutomationPractice/";
 		driver.get(url);

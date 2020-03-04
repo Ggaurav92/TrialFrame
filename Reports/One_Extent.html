@@ -41,7 +41,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a>
-				<span class='suite-start-time'>04-Mar-2020, 10:10:31 am</span>
+				<span class='suite-start-time'>04-Mar-2020, 10:28:01 am</span>
 			</a>
 			<a>
 				<span>v3.0.0</span>
@@ -141,7 +141,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span><span class='strong'>2</span> step(s) passed</span>
+					<span><span class='strong'>5</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong'>2</span> step(s) failed, <span class='strong'>0</span> others
@@ -163,14 +163,14 @@
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>SecondTestClass</span>
-						<span class='test-time'>04-Mar-2020, 10:10:40 am</span>
+						<span class='test-time'>04-Mar-2020, 10:28:12 am</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>04-Mar-2020, 10:10:40 am</span>
-	<span class='label end-time'>04-Mar-2020, 10:11:03 am</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+827ms</span>
+	<span class='label start-time'>04-Mar-2020, 10:28:12 am</span>
+	<span class='label end-time'>04-Mar-2020, 10:28:58 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 45s+708ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -182,26 +182,21 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr class='log' status='pass'>
-					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:10:55 am</td>
-					<td class='step-details'><span class='label white-text green'>SecondTestFirst Test Case PASSED</span></td>
+				<tr class='log' status='fail'>
+					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+					<td class='timestamp'>10:28:24 am</td>
+					<td class='step-details'><span class='label white-text red'>SecondTest Test case FAILED due to below issues:</span></td>
 				</tr>
 				<tr class='log' status='fail'>
 					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>10:10:59 am</td>
-					<td class='step-details'><span class='label white-text red'>SecondTestSecond Test case FAILED due to below issues:</span></td>
-				</tr>
-				<tr class='log' status='fail'>
-					<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-					<td class='timestamp'>10:10:59 am</td>
+					<td class='timestamp'>10:28:24 am</td>
 					<td class='step-details'>org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=80.0.3987.132)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CL4KTUF', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ggaur\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d5ff26fc0f228ef480d89113367a1f3b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ggaur\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5a5e547dfee8e25b2a2b880baaa03c22
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -215,7 +210,7 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
-	at com.Amazon.SecondTestClass.SecondTestSecond(SecondTestClass.java:40)
+	at com.Amazon.SecondTestClass.SecondTest(SecondTestClass.java:46)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -245,6 +240,16 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)</td>
 				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:28:30 am</td>
+					<td class='step-details'><span class='label white-text green'>SecondTestFirst Test Case PASSED</span></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:28:31 am</td>
+					<td class='step-details'><span class='label white-text green'>SecondTestSecond Test Case PASSED</span></td>
+				</tr>
 			</tbody>
 		</table>
 	</div>
@@ -255,14 +260,14 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>TestFrame</span>
-						<span class='test-time'>04-Mar-2020, 10:10:59 am</span>
+						<span class='test-time'>04-Mar-2020, 10:28:31 am</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>04-Mar-2020, 10:10:59 am</span>
-	<span class='label end-time'>04-Mar-2020, 10:11:03 am</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+659ms</span>
+	<span class='label start-time'>04-Mar-2020, 10:28:31 am</span>
+	<span class='label end-time'>04-Mar-2020, 10:28:58 am</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 27s+410ms</span>
 </div>
 	<div class='test-steps'>
 		<table class='bordered table-results'>
@@ -276,8 +281,18 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 			<tbody>
 				<tr class='log' status='pass'>
 					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-					<td class='timestamp'>10:11:02 am</td>
+					<td class='timestamp'>10:28:36 am</td>
 					<td class='step-details'><span class='label white-text green'>firstTestFirst Test Case PASSED</span></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:28:51 am</td>
+					<td class='step-details'><span class='label white-text green'>firstTestSecond Test Case PASSED</span></td>
+				</tr>
+				<tr class='log' status='pass'>
+					<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+					<td class='timestamp'>10:28:56 am</td>
+					<td class='step-details'><span class='label white-text green'>firstTestThird Test Case PASSED</span></td>
 				</tr>
 			</tbody>
 		</table>
@@ -350,15 +365,15 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 								</thead>
 								<tbody>
 									<tr>
-										<td>04-Mar-2020, 10:10:40 am</td>
+										<td>04-Mar-2020, 10:28:12 am</td>
 										<td class='linked' test-id='1'>SecondTestClass</td>
 										<td><pre>org.openqa.selenium.NoAlertPresentException: no such alert
   (Session info: chrome=80.0.3987.132)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-CL4KTUF', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '13.0.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ggaur\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60244}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: d5ff26fc0f228ef480d89113367a1f3b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\ggaur\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:60968}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 5a5e547dfee8e25b2a2b880baaa03c22
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -372,7 +387,7 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
-	at com.Amazon.SecondTestClass.SecondTestSecond(SecondTestClass.java:40)
+	at com.Amazon.SecondTestClass.SecondTest(SecondTestClass.java:46)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -432,25 +447,25 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>04-Mar-2020, 10:10:31 am</div>
+					<div class='panel-lead'>04-Mar-2020, 10:28:01 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>04-Mar-2020, 10:11:03 am</div>
+			 		<div class='panel-lead'>04-Mar-2020, 10:28:58 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>31,604ms</div>
+					<div class='panel-lead'>57,113ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -514,7 +529,7 @@ Session ID: d5ff26fc0f228ef480d89113367a1f3b
 				skipParent: 0,
 				unknownParent: 0,
 				
-				passChild: 2,
+				passChild: 5,
 				failChild: 2,
 				fatalChild: 0,
 				errorChild: 0,
