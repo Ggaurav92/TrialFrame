@@ -8,12 +8,12 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-public class BaseClass {
+public class ScreenShotClass {
 
 	private WebDriver driver;
 	
 	//Constructor
-	public BaseClass(WebDriver driver) {
+	public ScreenShotClass(WebDriver driver) {
 		this.driver = driver;
 	}
 	

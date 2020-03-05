@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 public class SecondTestClass extends BrowserFunction{
   @Test
-  public void SecondTestFirst() throws InterruptedException {
+  public void Step_1() throws InterruptedException {
 	  
 	  //test= extent.createTest("g");
 	  String url = "https://rahulshettyacademy.com/AutomationPractice/";
@@ -23,20 +23,20 @@ public class SecondTestClass extends BrowserFunction{
 		driver.findElement(By.xpath("//input[@id='checkBoxOption3']")).click();
 		Thread.sleep(2000);
 		System.out.println(check.isSelected());
-		Assert.assertTrue(check.isSelected());
+		//Assert.assertTrue(check.isSelected());
 		check.click();
 		System.out.println(check.isSelected());
-		Assert.assertFalse(check.isSelected());
+		//Assert.assertFalse(check.isSelected());
   }
   
   @Test
-  public void SecondTestSecond() throws InterruptedException {
+  public void Step_2() throws InterruptedException {
 	  System.out.println("In Second Test Second");
   }
 	
   
   @Test
-  public void SecondTest() throws InterruptedException {
+  public void Step_3() throws InterruptedException {
 	  //test= extent.createTest("l");
 	  String url = "https://rahulshettyacademy.com/AutomationPractice/";
 		driver.get(url);
@@ -56,6 +56,15 @@ public class SecondTestClass extends BrowserFunction{
   }
   
   
+@Test
+public void Step_4() throws InterruptedException {
+	Assert.assertEquals(true, false);
+}
+
+@Test
+public void Step_5() throws InterruptedException {
+	Assert.assertEquals(true, true);
+}
 
 
 }

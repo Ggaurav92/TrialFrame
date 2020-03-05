@@ -4,7 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.Amazon.SecondTestClass"/>
-      <class name="com.Amazon.TestFrame"/>
+      <class name="com.Amazon.FirstTestClass"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

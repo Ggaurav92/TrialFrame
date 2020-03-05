@@ -11,14 +11,14 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
-public class TestFrame extends BrowserFunction{
+public class FirstTestClass extends BrowserFunction{
 	String url = "https://rahulshettyacademy.com/seleniumPractise/#/";
 	String[] itemsNeeded = {"Cucumber","Brocolli","Beetroot"};
   
 	
 	
 	@Test
-  public void firstTestFirst() {
+  public void Step_1() {
 	  //test= extent.createTest("f");
 	  driver.get(url);
 	  driver.manage().window().maximize();
@@ -61,7 +61,7 @@ public class TestFrame extends BrowserFunction{
   }// End of Test
   
 @Test
-public void firstTestSecond() throws InterruptedException {
+public void Step_2() throws InterruptedException {
 	String url = "https://www.makemytrip.com/";
 	driver.get(url);
 	driver.manage().window().maximize();
@@ -84,7 +84,7 @@ public void firstTestSecond() throws InterruptedException {
 }//End of firstTestSecond
 
 @Test
-public void firstTestThird() throws InterruptedException {
+public void Step_3() throws InterruptedException {
 	driver.findElement(By.xpath("//*[@id='root']//input[@id='toCity']//parent ::label/span")).click();
 	WebElement destination = driver.findElement(By.xpath("//*[@id='root']//input[@placeholder='To']"));
 	//destination.click();
